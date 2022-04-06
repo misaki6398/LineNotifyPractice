@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";    
+}
+
+@model LineNotifyPractice.Models.DB.Subscriber
+
+<div class="text-center">
+    <h1 class="display-4">歡迎! 請由上方按鈕控制功能!</h1>
+    <div class="half">
+        @if (Model is not null)
+        {
+            <img src=@Model.Photo alt=@Model.Username height="400">
+        }
+        else
+        {
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/1200px-LINE_logo.svg.png"
+            alt="Line Practice" height="400">            
+        }
+    </div>
+</div>
